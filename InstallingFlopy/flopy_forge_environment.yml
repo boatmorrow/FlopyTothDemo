@@ -1,0 +1,16 @@
+name: flopy_forge
+
+channels:
+    - conda-forge
+
+dependencies:
+    #standard packages
+    - ipython
+    - numpy
+    - matplotlib
+    - scipy
+    - pandas
+    - python
+    - jupyterlab
+    - spyder
+    - flopy
