@@ -40,9 +40,7 @@ You need at the very least - conda.
 
   - Pymake is utility for downloading and building modflow programs on your local machine. Pymake requires a fortran compiler.  I use gcc/gfortran which is available on all package managers. I think pymake only works easily for \*nix computers.  Windows users usually have to download pre-made binaries.
 
-- With flopy_forge environemnt active:
-
-    pip install mfpymake    
+- With flopy_forge environment active:    
 
 
 - There scripts to make every USGS groundwater code.  This is a bit over kill, but ensure you are always able to get the most up to date version of the build scripts.  Clone the git respository some where you like.  For me I keep all downloaded software in a folder under $Home/soft, where $Home is your user home prefix.  To download this repository I would then:
@@ -58,7 +56,7 @@ You need at the very least - conda.
 ### Step 4:
 - Install modflow 6 using pymake, (with flopy-forge active):
 
- -  Change to the examples directory:
+ -  Change to the examples directory
 
     cd pymake/examples
     python ./make_mf6.py
@@ -66,3 +64,8 @@ You need at the very least - conda.
 - This script will download the source code for the internet and compile it using your system compiler, so it requires an internet connection. After it completes you will have an exectuable named mf6, which is the modflow 6 program.  This program is what will be needed to run modflow simulations. the exectuable needs to be in the system PATH.  In other words, it either needs to be in a location the sytem knows to search (e.g. /usr/local/bin) or needs to be copied into any directory you trying to run model in, or you can add the current location to your PATH. The examples directory has scripts to download and build almost any USGS software.  Its pretty rad.  
 
 - We are now ready to begin simulating and analyzing groundwater flow problems. 
+
+### Getting started with FLOPY
+I have written a tutorial which uses Flopy and MODFLOW 2005 to simulate the results of Toth 1962.  You can get the entire repository by navigating to a directory where you like the repostiroy to reside, and then clone with git using:
+
+git clone https://github.com/boatmorrow/FlopyTothDemo
