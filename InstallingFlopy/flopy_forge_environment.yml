@@ -12,5 +12,4 @@ dependencies:
     - pandas
     - python
     - jupyterlab
-    - spyder
     - flopy
