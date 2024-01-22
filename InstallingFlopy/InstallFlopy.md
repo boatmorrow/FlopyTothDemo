@@ -13,7 +13,7 @@ You need at the very least - conda.
 
      yum install conda
 
-    MacOS, Windows - there are package installers at the Anaconda website: 
+*MacOS, Windows* - there are package installers at the Anaconda website: 
       https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html 
 
  - Run the installer.
@@ -53,15 +53,18 @@ You need at the very least - conda.
     cd $Home/soft/pymake
     git pull
 
+-Install pymake
+    python setup.py install
+
 ### Step 4:
-- Install modflow 6 using pymake, (with flopy-forge active):
+- Install modflow2005 using pymake, (with flopy-forge active):
 
  -  Change to the examples directory
 
     cd pymake/examples
-    python ./make_mf6.py
+    python ./make_mf2005.py
 
-- This script will download the source code for the internet and compile it using your system compiler, so it requires an internet connection. After it completes you will have an exectuable named mf6, which is the modflow 6 program.  This program is what will be needed to run modflow simulations. the exectuable needs to be in the system PATH.  In other words, it either needs to be in a location the sytem knows to search (e.g. /usr/local/bin) or needs to be copied into any directory you trying to run model in, or you can add the current location to your PATH. The examples directory has scripts to download and build almost any USGS software.  Its pretty rad.  
+- This script will download the source code for the internet and compile it using your system compiler, so it requires an internet connection. After it completes you will have an exectuable named mf6, which is the modflow 2005 program.  This program is what will be needed to run modflow simulations. the exectuable needs to be in the system PATH.  In other words, it either needs to be in a location the sytem knows to search (e.g. /usr/local/bin) or needs to be copied into any directory you trying to run model in, or you can add the current location to your PATH. The examples directory has scripts to download and build almost any USGS software.  Its pretty rad.  
 
 - We are now ready to begin simulating and analyzing groundwater flow problems. 
 
